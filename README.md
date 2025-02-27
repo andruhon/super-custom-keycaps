@@ -9,6 +9,9 @@ Keycaps are at early prototyping stage. I will later organise and document every
 *  [archive/newcaps-poly.scad](archive/newcaps-poly.scad) A generator of compound caps to be assembled with [newcaps-poly-stems.scad](newcaps-poly-stems.scad). Assembling it from two parts hopefully allows these caps not to require colouring.
 *  [polyhedron/polyhedron3-caps.scad](polyhedron/polyhedron3-caps.scad) An atttempt to build multicolour 3d print not needing colouring.
 
+Keycaps printed on P1S with AMS, 0.2mm nozzle
+![Keycaps AMS](keycaps-ams.png)
+
 A photograph of different prototypes on my keyboard
 ![Keyboard](keyboard-with-prototype-keycaps.jpg)
 
