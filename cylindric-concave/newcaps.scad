@@ -2,13 +2,10 @@
 offset_step = 19;
 
 // How much we should move text up to get it placed on the surface of the button
-button_height_offset=7.7;
+button_height_offset=8.08;
 
-// Render text to be printed with different color, leave grooves to paint otherwise
-fill_text=true;
-
-// Svg scale. All provided SVGs should have the same size
-svg_scale = 0.28;
+// Render options: all, body, center, left, right, side
+render="side";
 
 // Build only one button, set to -1, -1 to build all, set row and line to build only one
 only = [-1, -1];
@@ -16,66 +13,78 @@ only = [-1, -1];
 // There are currently three styles sharp, presoft and postsoft
 // You can tinker with styles in newcap.scad or use your own stl files
 
-// Buttons may be imported as SVG. Top SVG's dimentions 115x125, side SVG 115x50
-// add_button(0, 0, "sharp", svg_top="svg/u.svg", svg_side="svg/u-side.svg");
 
-// Bittpms may be imported with text
-// add_button(0, 1, "postsoft", middle="Q", side="Esc");
+// The way I produced SVGs in Inkscape:
+// Create new document
+// Type text with with Font Size 12 (face I used is free Harmony OS font)
+// Select text and convert it to path (shift + ctrl + c)
+// Go to document properties and click "Resize content to size"
+// Dimensions in ducument properties are somewhat close to what will end up in print.
+// Sometimes OpenSCAD does not like the SVG in this case do "Simplify" in Incscape
 
 // import(str("button-", "sharp", ".stl"));
-add_button(1, 0, "presoft", svg_top="svg/s.svg", svg_side="svg/s-side.svg");
-add_button(2, 0, "presoft", svg_top="svg/d.svg", svg_side="svg/d-side.svg");
-add_button(3, 0, "presoft", svg_top="svg/f.svg", svg_side="svg/f-side.svg", home_row=true);
-add_button(4, 0, "presoft", svg_top="svg/g.svg", svg_side="svg/g-side.svg");
-add_button(6, 0, "presoft", svg_top="svg/h.svg", svg_side="svg/h-side.svg");
-add_button(7, 0, "presoft", svg_top="svg/j.svg", svg_side="svg/j-side.svg", home_row=true);
-add_button(8, 0, "presoft", svg_top="svg/k.svg", svg_side="svg/k-side.svg");
-add_button(9, 0, "presoft", svg_top="svg/l.svg", svg_side="svg/l-side.svg");
-add_button(10, 0, "presoft", svg_top="svg/semi.svg", svg_side="svg/semi-side.svg");
+union() {
+    ref_cube(); // Ref cube to avoid parts "falling down" in BambuLab
+    add_button(1, 0, "presoft", svg_top_center="svg/z.svg", svg_side="svg/shift.svg");
+    add_button(2, 0, "presoft", svg_top_center="svg/x.svg", svg_side="svg/ctrl.svg", svg_top_left="svg/f1.svg", svg_top_right="svg/bsls.svg");
+};
+
 
 
 module add_button(
     row, line,
     type,
     home_row=false,
-    middle="", middle_size=5,
-    side="", side_size=3,
-    // Svg covers entire cap top and overrides other top options
-    svg_top="",
-    // Svg covers entire side and overrides side text
+    svg_top_center="",
+    svg_top_left="",
+    svg_top_right="",
+    // Svg covers entire side
     svg_side=""
 ) {
     if (only == [-1, -1] || only == [row, line]) {
         translate([row * offset_step, -line * offset_step, 0]) {        
-            difference() {
-                import(str("button-", type, ".3mf"), convexity=7);
-                faces(
-                    type=type,
-                    middle=middle, middle_size=middle_size,
-                    svg_top=svg_top
-                );
-                faces_side(
-                    type=type,
-                    side=side, side_size=side_size,
-                    svg_side=svg_side
+            if (render == "all" || render == "body") {
+                difference() {
+                    import(str("bodies/button-", type, ".3mf"), convexity=7);
+                    faces_top_center(
+                        svg=svg_top_center
+                    );
+                    faces_top_left(
+                        svg=svg_top_left
+                    );
+                    faces_top_right(
+                        svg=svg_top_right
+                    );
+                    faces_side(
+                        svg=svg_side,
+                        text_depth=0.4
+                    );
+                }
+            }
+            if (render == "all" || render=="center") {
+                color("Grey") faces_top_center(
+                    svg=svg_top_center,
+                    text_depth=0.2
                 );
             }
-            if (fill_text) {
-                translate([0, 0, -0.2]) color("Red") faces(
-                    type=type,
-                    middle=middle, middle_size=middle_size,
-                    svg_top=svg_top,
-                    text_depth=0.8
+            if (render == "all" || render=="left") {
+                color("Blue") faces_top_left(
+                    svg=svg_top_left,
+                    text_depth=0.2
                 );
-                color("Red") difference() {
+            }
+            if (render == "all" || render=="right") {
+                color("Red") faces_top_right(
+                    svg=svg_top_right,
+                    text_depth=0.2
+                );
+            }
+            if (render == "all" || render=="side") {
+                color("Purple") 
                     faces_side(
-                        type=type,
-                        side=side, side_size=side_size,
-                        svg_side=svg_side,
-                        text_depth=2
-                    );
-                    translate([-5,-11.7,0]) cube([10,5,9]);
-                }                
+                        svg=svg_side,
+                        text_depth=0.4
+                );
             }
             if (home_row) {
                 translate([-0.25,-5,button_height_offset]) sphere(1, $fn=50);
@@ -88,55 +97,69 @@ module add_button(
     }
 }
 
-module faces(
-    type,
-    middle, middle_size,
-    // Svg covers entire cap top and overrides other top options
-    svg_top,
+module faces_top_center(
+    svg,
     text_depth=2
 ) {
-    if (svg_top != "") {
-        // SVG covers entire cap top and overrides other top options
+    if (svg != "") {
             translate([0,0,button_height_offset]) linear_extrude(height=text_depth) {
-                scale(svg_scale) import(svg_top, center=true);
+                import(svg, center=true);
             }
-    } else {
-        // Currently text only supports middle position
-        if (middle != "") {
-            translate([0,0,button_height_offset]) linear_extrude(height=text_depth) {
-                text(
-                        middle,
-                        size=middle_size,
-                        halign="center",
-                        valign="center"
-                );
+    }
+}
+module faces_top_left(
+    svg,
+    text_depth=2
+) {
+    // TODO need to figure out how to position by SVG corner, not by center
+    if (svg != "") {
+            translate([-3.4,-4.4,button_height_offset]) linear_extrude(height=text_depth) {
+                import(svg, center=true);
             }
-        }
+    }
+}
+module faces_top_right(
+    svg,
+    text_depth=2
+) {
+    if (svg != "") {
+            translate([4.5,2.5,button_height_offset]) linear_extrude(height=text_depth) {
+                import(svg, center=true);
+            }
     }
 }
 module faces_side(
-    type,
-    side, side_size,
-    // Svg covers entire side and overrides side text
-    svg_side,
+    // Svg covers entire side
+    svg,
     text_depth=2
 ) {
-    if (svg_side != "") {
+    if (svg != "") {
         translate([0, 0.1, 0]) {
-            rotate([73]) translate([0,3.5,button_height_offset]) linear_extrude(height=text_depth) {
-                scale(svg_scale) import(svg_side, center=true);
-            };
-        }
-    } else {
-        translate([0, 0.1, 0]) {
-            rotate([73]) translate([0,3.5,button_height_offset]) linear_extrude(height=text_depth) {
-                    text(
-                            side,
-                            size=side_size,
-                            halign="center",
-                            valign="center"
-                    );
+            rotate([74.7]) translate([0,3.5,8.16]) linear_extrude(height=text_depth) {
+                import(svg, center=true);
             };
         }
     }
+}
+
+// Ref cube to avoid parts "falling down" in BambuLab
+module ref_cube() {
+    s = 0.4;
+    translate([0, -10, 0]) cube([s,s,s]);
+    translate([60, 10, 0]) cube([s,s,s]);
+    /*if (render == "all" || render == "body") {
+        cube([s,s,s]);
+    }
+    if (render=="center") {
+        translate([0,s,0]) cube([s,s,s]);
+    }
+    if (render=="left") {
+        translate([0,s*2,0]) cube([s,s,s]);
+    }
+    if (render=="right") {
+        translate([0,s*3,0]) cube([s,s,s]);
+    }
+    if (render=="side") {
+        translate([0,s*4,0]) cube([s,s,s]);
+    }*/
 }
