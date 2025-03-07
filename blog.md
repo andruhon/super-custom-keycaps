@@ -15,11 +15,24 @@ Moved keycaps from https://github.com/andruhon/34KeysLayoutQMK into this separat
 
 ## 23 Feb 2025
 Printed first keycaps on P1S with AMS with 0.2mm nozzle. They look really nice!
-Concluded that keycaps are small enough and don't really need support if infill selected correctly.
+Concluded that keycaps are small enough and don't really need support if infill selected correctly.  
 ![Keyboard](keycaps-ams.png)
 
 ## 24 November 2024
-It is getting hard to get in to the queue in the library, also they refuse to do any tinkering with settings printing everything on defaults. I decided to print a few keycaps for many in local worksop.
+It is getting hard to get in to the queue in the library, also they refuse to do any tinkering with settings printing everything on defaults. I decided to print a few keycaps for money in local worksop (it is not cheap).
+![Keycaps from Claude](blog-assets/keycaps-claude.png)
+
+Tried to colour new keycaps and found that because they were printed at an angle they have notable bleeding of permanent marker paint.
+On the picture below L with 6 and arrow right is coloured with acrylic paint (except curly brace, which is a permanent marker);
+P is sanded and coloured with automotive enamel;
+Q with Esc is panted with permanent marker and has notable bleeding.  
+![Different colouring of keycaps](blog-assets/keycaps-different-colouring.png)
+
+Most of bleeding has came off from Q after sanding, but it seems like some of that has penetrated deeper:  
+![After sanding](blog-assets/keycaps-after-sanding.png)
+
+Sanded W with mouse 2 before painting, and no bleeding observed:  
+![Pre sanding](blog-assets/keycaps-pre-sanding.png)
 
 ## 20 Nowember 2024
 Started building my own profile with concave and cyllindric stems and extra print on front side. Unfortunately library have ran out of white filament, so I decided to print my new keycaps with concave in black. Black filament turned to be more fragile.
