@@ -3,6 +3,9 @@
 I'm trying to design keycaps which are good when printed on 
 3D printer with AMS or similar material changing system.
 
+## 7 Mar 2025
+Looking at my old coloured keycaps I can conclude that permanent marker wears over time, acrylic paint seems to be in a good shape and automotive enamel not showing any detereoration at all.
+
 ## 3 Mar 2025
 Decided that it's better to have every symbol in a separate file.
 This will help me exporting for 3D printing (with separate file for each material).
