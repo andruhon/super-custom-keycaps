@@ -1,4 +1,4 @@
-import { drawCommands, cameras, controls } from '@jscad/regl-renderer'
+import { commands as drawCommands, cameras, controls } from '@jscad/regl-renderer'
 
 const width = 300
 const height = 200
