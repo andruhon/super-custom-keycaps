@@ -11,7 +11,8 @@ After failure with JSCAD I decided to tidy up my OpenSCAD scripts. Upgraded to O
 
 OpenSCAD language feels a bit awkward for me, I had hopes to make it easier writing JavaScript with JSCAD (aka OPENJSCAD),
 and it all looked good, until I tried to extrude my SVGs. So far JSCAD is really weak with extruding SVGs.
-See https://github.com/jscad/OpenJSCAD.org/issues/1253 and https://github.com/jscad/OpenJSCAD.org/issues/1386
+See https://github.com/jscad/OpenJSCAD.org/issues/1253, https://github.com/jscad/OpenJSCAD.org/issues/1087 and https://github.com/jscad/OpenJSCAD.org/issues/1386
+
 
 ## 7 Mar 2025
 
