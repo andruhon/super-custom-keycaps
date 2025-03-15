@@ -3,6 +3,7 @@ These keykaps were initially a part of my layout for [34 keys QMK keyboard layou
 # Generating keycaps
 
 Keycaps are at early prototyping stage. I will later organise and document everything properly.
+Some insights may be find in [Blog](blog.md)
 
 Keycaps printed on P1S with AMS, 0.2mm nozzle
 ![Keycaps AMS](keycaps-ams.png)
