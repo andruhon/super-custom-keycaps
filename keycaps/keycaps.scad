@@ -10,9 +10,10 @@ KEYCAP_COLOUR = "LightGrey"; // This color and others below are for preview TO_R
 
 // SPACING between keycaps
 SPACING = 4;
-LAYER_HEIGHT = 0.06; // With 0.2 nozzle the layer height is usually 0.06
+LAYER_HEIGHT = 0.1; // With 0.2 nozzle the layer height is usually 0.1
 LAYER_LINE_WIDTH = 0.22;
 PRINT_DEPTH = LAYER_HEIGHT * 2; // Best when it is double layer height
+SURFACE_DIFF_DEPTH = KEYCAP_HEIGHT - KEYCAP_SURFACE_LOWEST_POINT + PRINT_DEPTH;
 
 
 SURFACE_PRINT_ANGLE = 0; // In the case surface is at angle
@@ -58,17 +59,17 @@ defaultBody = "bodies/cylindric-concave.3mf";
 
 // Data to TO_RENDER keycaps
 keycaps = [
-    /*keycap(2, 0, side_svg = "shift"),
+    /*keycap(2, 0, side_svg = "KC_LEFT_SHIFT"),
     keycap(2, 1, side_svg = "ctrl"),*/
-    keycap(2, 2, center_svg = "c", left_svg = "f2", side_svg = "alt"),
-    keycap(2, 3, center_svg = "v", left_svg = "f3", right_svg = "test_big", side_svg = "gui"),
-    keycap(2, 4, center_svg = "b", left_svg = "f11", right_svg = "test_tiny",  side_svg = "del"),
+    keycap(2, 2, center_svg = "c", left_svg = "f2", right_svg="KC_COMMA", side_svg = "alt"),
+    keycap(2, 3, center_svg = "v", left_svg = "f3", right_svg = "KC_DOT", side_svg = "gui"),
+    keycap(2, 4, center_svg = "b", left_svg = "f11", right_svg = "QK_MOUSE_BUTTON_3",  side_svg = "del"),
     
-    keycap(2, 5, center_svg = "n", side_svg = "enter"),
-    keycap(2, 6, center_svg = "m", side_svg = "gui"),
-    keycap(2, 7, center_svg = "dot", side_svg = "alt"),
-    keycap(2, 8, center_svg = "comma", side_svg = "ctrl"),
-    keycap(2, 9, center_svg = "slash", side_svg = "shift"),
+    keycap(2, 5, center_svg = "n", left_svg = "KC_DEL", right_svg = "QK_MOUSE_BUTTON_1", side_svg = "enter"),
+    keycap(2, 6, center_svg = "m", left_svg = "KC_TAB", right_svg= "KC_1", side_svg = "gui"),
+    keycap(2, 7, center_svg = "KC_COMMA", left_svg = "KC_INS", right_svg= "KC_2", side_svg = "alt"),
+    keycap(2, 8, center_svg = "KC_DOT", left_svg = "KC_APP", right_svg= "KC_3", side_svg = "ctrl"),
+    keycap(2, 9, center_svg = "slash", left_svg = "KC_LEFT_SHIFT", right_svg="QK_MOUSE_ACCELERATION_0", side_svg = "KC_LEFT_SHIFT"),
 ];
 
 // Prepares data for keycap
@@ -163,6 +164,7 @@ module printBody(
 ) {
     difference() {
         translate([row * (KEYCAP_WIDTH + SPACING), -line * (KEYCAP_WIDTH + SPACING), 0]) {
+            // There's some issue with 2025.03.16 imported files are floating a few mm above XY plane
             import(body, convexity=KEYCAP_CONVEXITY);
         }
         printText(
@@ -171,7 +173,7 @@ module printBody(
             relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
             position_z = SURFACE_CENTER_PRINT_POSITION_Z,
             angle = SURFACE_PRINT_ANGLE,
-            depth = KEYCAP_HEIGHT - KEYCAP_SURFACE_LOWEST_POINT
+            depth = SURFACE_DIFF_DEPTH
         );
         printText(
             row, line,
@@ -180,7 +182,7 @@ module printBody(
             relative_y = -getRelativeSvgPositionY(left_svg),            
             position_z = SURFACE_LEFT_PRINT_POSITION_Z,
             angle = SURFACE_PRINT_ANGLE,
-            depth = KEYCAP_HEIGHT - KEYCAP_SURFACE_LOWEST_POINT
+            depth = SURFACE_DIFF_DEPTH
         );
         printText(
             row, line,
@@ -189,7 +191,7 @@ module printBody(
             relative_y = getRelativeSvgPositionY(right_svg),            
             position_z = SURFACE_RIGHT_PRINT_POSITION_Z,
             angle = SURFACE_PRINT_ANGLE,
-            depth = KEYCAP_HEIGHT - KEYCAP_SURFACE_LOWEST_POINT
+            depth = SURFACE_DIFF_DEPTH
         );
         printText(
             row, line,
@@ -211,7 +213,6 @@ module printText(
     angle = 0,
     depth = PRINT_DEPTH
 ) {
-    echo(svg);
     if (svg != "") {
         translate([row * (KEYCAP_WIDTH + SPACING), -line * (KEYCAP_WIDTH + SPACING), 0]) {
             translate([relative_x, relative_y, position_z])
