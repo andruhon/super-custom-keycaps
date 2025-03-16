@@ -7,6 +7,18 @@ I'm trying to design keycaps which are good when printed on
 
 After failure with JSCAD I decided to tidy up my OpenSCAD scripts. Upgraded to OpenSCAD-2025.03.12.
 
+Even though JSCAD has less problems extruding SVG this does not mean it all rainbows and unicorns there.
+One of the biggest reasons I wanted to switch to JSCAD was that it is not possible in OpenSCAD to measure
+objects, for example it is not possible to get dimensions of newly imported SVGs, as well as it is not possible
+to align them relatively. The only alignment available is "center" at import time.
+
+Working around this limitation of OpenSCAD was somewhat easier than figuring out how extrusions work in JSCAD:
+I simply created extra JS script which scans directory with SVG files, reads their box dimensions and then
+writes them into scad file which can later be imported into scad script.
+
+The alignment algorithm seems to be working well with SVGs of different sizes:  
+![Aligned icons](blog-assets/relative-positions.png)
+
 ## 15 Mar 2025
 
 OpenSCAD language feels a bit awkward for me, I had hopes to make it easier writing JavaScript with JSCAD (aka OPENJSCAD),
@@ -33,7 +45,7 @@ Printed first keycaps on P1S with AMS with 0.2mm nozzle. They look really nice!
 Concluded that keycaps are small enough and don't really need support if infill selected correctly.  
 ![Keyboard](keycaps-ams.png)
 
-## 27 November 2024
+## 27 Nov 2024
 
 A photograph of different prototypes on my keyboard
 ![Keyboard](keyboard-with-prototype-keycaps.jpg)
@@ -43,7 +55,7 @@ A photograph of different prototypes on my keyboard
 - Q and W are also from newcaps.scad, but painted with permanent marker. Q first painted and sanded, P first sanded then painted. It is important to notice that layer lines work as capillary and suck all the paint, so it is preferrable to sand the button first.
 - Black keys except R,T and P are Keychron caps.
 
-## 24 November 2024
+## 24 Nov 2024
 
 It is getting hard to get in to the queue in the library, also they refuse to do any tinkering with settings printing everything on defaults. I decided to print a few keycaps for money in local worksop (it is not cheap).
 ![Keycaps from Claude](blog-assets/keycaps-claude.png)
@@ -60,16 +72,16 @@ Most of bleeding has came off from Q after sanding, but it seems like some of th
 Sanded W with mouse 2 before painting, and no bleeding observed:  
 ![Pre sanding](blog-assets/keycaps-pre-sanding.png)
 
-## 20 November 2024
+## 20 Nov 2024
 
 Started building my own profile with concave and cyllindric stems and extra print on front side. Unfortunately library have ran out of white filament, so I decided to print my new keycaps with concave in black. Black filament turned to be more fragile.
 Tried colouring them with nail polish, acrylic paint and car enamel. Only P with backspace pinted with white automotive enamel survived.
 
-## 26 October 2024
+## 26 Oct 2024
 
 Had issues with stems on both Riskable and Aileron profiles. They either too loose, or too fragile. Not sure why Aileron keycaps have rectangular stem, so they cannot be placed on side.
 
-## 22 October 2024
+## 22 Oct 2024
 
 Ordered to print my keykaps in Makerspace of local library. It took 10 days to get to the tip of the queue and get my first prototypes. I started with flat keycaps from karlh592 (aileron.me).
 The flat keycap was K with arrow down on lower, and 5 raise. I also printed a few blank keycaps from https://github.com/riskable/keycap_playground/, it seems like they are really optimized for FDM and feel good to touch.

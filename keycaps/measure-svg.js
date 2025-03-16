@@ -4,6 +4,7 @@ import path from "path";
 /**
  * Reads svg files from ./svg directory and attempts to find their dimensions.
  * Writing resulting dimensions into svg_dimensions.scad
+ * Make sure you check actual names produced. This script will replace characters including "-" with "_"
  */
 
 // --- Main execution ---
