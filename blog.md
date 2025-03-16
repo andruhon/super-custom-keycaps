@@ -19,12 +19,13 @@ writes them into scad file which can later be imported into scad script.
 The alignment algorithm seems to be working well with SVGs of different sizes:  
 ![Aligned icons](blog-assets/relative-positions.png)
 
+!!! Idea !!! SVG file names should match QMK codes! Hypothetically I can later work out script to convert keymap.c to data for keycaps.scad
+
 ## 15 Mar 2025
 
 OpenSCAD language feels a bit awkward for me, I had hopes to make it easier writing JavaScript with JSCAD (aka OPENJSCAD),
 and it all looked good, until I tried to extrude my SVGs. So far JSCAD is really weak with extruding SVGs.
 See https://github.com/jscad/OpenJSCAD.org/issues/1253, https://github.com/jscad/OpenJSCAD.org/issues/1087 and https://github.com/jscad/OpenJSCAD.org/issues/1386
-
 
 ## 7 Mar 2025
 

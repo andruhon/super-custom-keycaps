@@ -2,45 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="4.3243418mm"
+   width="4.1929221mm"
    height="3.10303mm"
-   viewBox="0 0 4.3243417 3.1030299"
+   viewBox="0 0 4.192922 3.1030299"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
-   sodipodi:docname="f1.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview1"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="5.6943322"
-     inkscape:cx="35.912903"
-     inkscape:cy="9.5709204"
-     inkscape:window-width="1920"
-     inkscape:window-height="1008"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
   <defs
      id="defs1" />
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-96.111488,-120.96871)">
     <path
-       d="m 96.111488,124.07174 v -3.0988 h 2.074332 v 0.63076 h -1.350432 v 0.67734 h 1.210732 v 0.62653 h -1.210732 v 1.16417 z m 3.591977,-2.32834 -0.804333,0.4445 v -0.67733 l 0.969432,-0.54186 h 0.567266 v 3.10303 h -0.732365 z"
+       d="m 96.111488,124.07174 v -3.0988 h 2.074332 v 0.63076 h -1.350432 v 0.67734 h 1.210732 v 0.62653 h -1.210732 v 1.16417 z m 3.460556,-2.32834 -0.804333,0.4445 v -0.67733 l 0.969432,-0.54186 h 0.567267 v 3.10303 h -0.732366 z"
        id="text1"
        style="font-weight:900;font-size:4.23333px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.264583px;text-anchor:middle;stroke-width:1.71979"
        aria-label="F1" />
