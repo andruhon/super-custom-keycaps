@@ -1,6 +1,9 @@
-These keykaps were initially a part of my layout for [34 keys QMK keyboard layout](https://github.com/andruhon/34KeysLayoutQMK), but it seems like they deserve a separate repo.
+# Super Custom Keycaps
+Customizable keycaps with side prints for QMK Tri Layouts opmimized for 3D printing 
 
-# Generating keycaps
+These keykaps were initially a part of my layout for [TypeS Tri Layout](https://github.com/andruhon/type-s-tri-layout), but it seems like they deserve a separate repo.
+
+## Generating keycaps
 
 Keycaps are at early prototyping stage. I will later organise and document everything properly.
 Some insights may be find in [Blog](blog.md)
