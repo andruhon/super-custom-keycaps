@@ -3,10 +3,14 @@ Customizable keycaps with side prints for QMK Tri Layouts opmimized for 3D print
 
 These keykaps were initially a part of my layout for [TypeS Tri Layout](https://github.com/andruhon/type-s-tri-layout), but it seems like they deserve a separate repo.
 
+Keycaps printed on P1S with AMS, 0.2mm nozzle
+![Keycaps AMS](keycaps-ams.png)
+
+![Keyboard with almost full set of keycaps](blog-assets/keyboard.png)
+
 ## Generating keycaps
 
 Keycaps are at early prototyping stage. I will later organise and document everything properly.
 Some insights may be find in [Blog](blog.md)
 
-Keycaps printed on P1S with AMS, 0.2mm nozzle
-![Keycaps AMS](keycaps-ams.png)
+
