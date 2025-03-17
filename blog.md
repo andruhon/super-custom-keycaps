@@ -3,6 +3,17 @@
 I'm trying to design keycaps which are good when printed on
 3D printer with AMS or similar material changing system.
 
+## 17 Mar 2025
+It is slowly getting shape!
+
+![Keyboard with almost full set of keycaps](blog-assets/keyboard.png)
+
+Achieved five colours with adding Pause onto one of white layers between side prints and top rints, 
+to replace Purple filament with Blue filament. As long as we never have all 5 colours in one layer it works great.
+
+It is early autumn in New Zealand and humidity outside is already close to 100%, nearing 80% inside. 
+I need to dry my filament better, observed some stringing with my last print.
+
 ## 16 Mar 2025
 
 After failure with JSCAD I decided to tidy up my OpenSCAD scripts. Upgraded to OpenSCAD-2025.03.12.
