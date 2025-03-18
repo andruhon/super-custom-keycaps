@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1.28058mm"
-   height="5.8596196mm"
-   viewBox="0 0 1.2805801 5.8596198"
+   width="1.4086432mm"
+   height="6.2989354mm"
+   viewBox="0 0 1.4086433 6.2989356"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,18 +12,15 @@
   <defs
      id="defs1" />
   <g
-     id="layer1"
-     transform="translate(-35.83172,-127.15153)">
-    <g
-       id="text2"
-       style="font-weight:900;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
-       aria-label="!&#10;1">
-      <path
-         d="m 36.58049,129.88202 q -0.137583,0 -0.23636,-0.1023 -0.09525,-0.0988 -0.09525,-0.23636 0,-0.14111 0.09525,-0.23989 0.09878,-0.10231 0.23636,-0.10231 0.137583,0 0.236361,0.10231 0.09878,0.0988 0.09878,0.23989 0,0.13758 -0.09878,0.23636 -0.09878,0.1023 -0.236361,0.1023 z m 0.22225,-0.92427 h -0.440971 l -0.08467,-1.80622 h 0.606777 z"
-         id="path3" />
-      <path
-         d="m 36.501996,131.07088 -0.670276,0.37042 v -0.56445 l 0.807859,-0.45155 H 37.1123 v 2.58585 h -0.610304 z"
-         id="path4" />
-    </g>
+     id="text1"
+     style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
+     aria-label="!&#10;1"
+     transform="translate(-6.5524497,-1.5497131)">
+    <path
+       d="m 7.3800692,4.5532664 q -0.1513418,0 -0.2599975,-0.1125362 -0.1047751,-0.1086557 -0.1047751,-0.2599975 0,-0.1552224 0.1047751,-0.2638781 0.1086557,-0.1125362 0.2599975,-0.1125362 0.1513419,0 0.2599975,0.1125362 0.1086557,0.1086557 0.1086557,0.2638781 0,0.1513418 -0.1086557,0.2599975 Q 7.5314111,4.5532664 7.3800692,4.5532664 Z M 7.6245445,3.5365597 h -0.48507 L 7.0463411,1.5497131 h 0.6674563 z"
+       id="path2" />
+    <path
+       d="M 7.2897561,5.714341 6.5524497,6.1217998 V 5.5009102 L 7.4410979,5.0041986 h 0.519995 V 7.848649 H 7.2897561 Z"
+       id="path3" />
   </g>
 </svg>

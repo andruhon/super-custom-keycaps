@@ -59,17 +59,27 @@ defaultBody = "bodies/cylindric-concave.3mf";
 
 // Data to TO_RENDER keycaps
 keycaps = [
-    /*keycap(2, 0, side_svg = "KC_LEFT_SHIFT"),
-    keycap(2, 1, side_svg = "ctrl"),*/
-    keycap(2, 2, center_svg = "c", left_svg = "f2", right_svg="KC_COMMA", side_svg = "alt"),
+    keycap(0, 0, center_svg = "KC_Q", side_svg = "KC_ESC"),
+    keycap(0, 7, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC-dashed"),
+    keycap(0, 9, center_svg = "KC_P", side_svg = "KC_BSPC"),
+    keycap(2, 0, center_svg = "KC_Z", left_svg = "KC_LSFT", right_svg = "MS_BTN3", side_svg = "KC_LSFT"),
+    keycap(2, 1, side_svg = "ctrl"),
+    keycap(2, 2, center_svg = "c", left_svg = "f2", right_svg="KC_COMM", side_svg = "alt"),
     keycap(2, 3, center_svg = "v", left_svg = "f3", right_svg = "KC_DOT", side_svg = "gui"),
-    keycap(2, 4, center_svg = "b", left_svg = "f11", right_svg = "QK_MOUSE_BUTTON_3",  side_svg = "del"),
+    keycap(2, 4, center_svg = "b", left_svg = "f11", side_svg = "del"),
     
-    keycap(2, 5, center_svg = "n", left_svg = "KC_DEL", right_svg = "QK_MOUSE_BUTTON_1", side_svg = "enter"),
-    keycap(2, 6, center_svg = "m", left_svg = "KC_TAB", right_svg= "KC_1", side_svg = "gui"),
-    keycap(2, 7, center_svg = "KC_COMMA", left_svg = "KC_INS", right_svg= "KC_2", side_svg = "alt"),
+    keycap(2, 5, center_svg = "n", left_svg = "KC_DEL", right_svg = "MS_BTN1", side_svg = "enter"),
+    keycap(2, 6, center_svg = "KC_M", left_svg = "KC_TAB", right_svg= "KC_1", side_svg = "KC_LGUI"),
+    keycap(2, 7, center_svg = "KC_COMM", left_svg = "KC_INS", right_svg= "KC_2", side_svg = "alt"),
     keycap(2, 8, center_svg = "KC_DOT", left_svg = "KC_APP", right_svg= "KC_3", side_svg = "ctrl"),
-    keycap(2, 9, center_svg = "slash", left_svg = "KC_LEFT_SHIFT", right_svg="QK_MOUSE_ACCELERATION_0", side_svg = "KC_LEFT_SHIFT"),
+    keycap(2, 9, center_svg = "KC_SLSH", right_svg="MS_ACL0", side_svg = "KC_LSFT")
+    
+    // keycap(0, 0, center_svg = "KC_Q", side_svg = "KC_ESC"),
+    // keycap(0, 1, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC-dashed"),
+    // keycap(0, 2, center_svg = "KC_P", side_svg = "KC_BSPC"),
+    // keycap(1, 0, center_svg = "KC_Z", left_svg = "KC_LSFT", right_svg = "MS_BTN3", side_svg = "KC_LSFT"),
+    // keycap(1, 1, center_svg = "KC_M", left_svg = "KC_TAB", right_svg= "KC_1", side_svg = "KC_LGUI"),
+    // keycap(1, 2, center_svg = "KC_SLSH", right_svg="MS_ACL0", side_svg = "KC_LSFT")
 ];
 
 // Prepares data for keycap
@@ -163,9 +173,9 @@ module printBody(
     side_svg, side_relative_y, side_position_z, side_angle    
 ) {
     difference() {
-        translate([row * (KEYCAP_WIDTH + SPACING), -line * (KEYCAP_WIDTH + SPACING), 0]) {
+        translate([row * (KEYCAP_WIDTH + SPACING), -line * (KEYCAP_WIDTH + SPACING), KEYCAP_HEIGHT/2]) {
             // There's some issue with 2025.03.16 imported files are floating a few mm above XY plane
-            import(body, convexity=KEYCAP_CONVEXITY);
+            import(body, center=true, convexity=KEYCAP_CONVEXITY);
         }
         printText(
             row, line,
