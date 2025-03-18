@@ -60,7 +60,7 @@ defaultBody = "bodies/cylindric-concave.3mf";
 // Data to TO_RENDER keycaps
 keycaps = [
     keycap(0, 0, center_svg = "KC_Q", side_svg = "KC_ESC"),
-    keycap(0, 7, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC-dashed"),
+    keycap(0, 7, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC"),
     keycap(0, 9, center_svg = "KC_P", side_svg = "KC_BSPC"),
     keycap(2, 0, center_svg = "KC_Z", left_svg = "KC_LSFT", right_svg = "MS_BTN3", side_svg = "KC_LSFT"),
     keycap(2, 1, side_svg = "ctrl"),
@@ -75,8 +75,8 @@ keycaps = [
     keycap(2, 9, center_svg = "KC_SLSH", right_svg="MS_ACL0", side_svg = "KC_LSFT")
     
     // keycap(0, 0, center_svg = "KC_Q", side_svg = "KC_ESC"),
-    // keycap(0, 1, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC-dashed"),
-    // keycap(0, 2, center_svg = "KC_P", side_svg = "KC_BSPC"),
+    // keycap(0, 1, center_svg = "KC_I", left_svg = "KC_UP", right_svg = "KC_8", side_svg = "KC_LBRC"),
+    // keycap(0, 2, center_svg = "KC_P", side_svg = "KC_BSPC_dashed"),
     // keycap(1, 0, center_svg = "KC_Z", left_svg = "KC_LSFT", right_svg = "MS_BTN3", side_svg = "KC_LSFT"),
     // keycap(1, 1, center_svg = "KC_M", left_svg = "KC_TAB", right_svg= "KC_1", side_svg = "KC_LGUI"),
     // keycap(1, 2, center_svg = "KC_SLSH", right_svg="MS_ACL0", side_svg = "KC_LSFT")
