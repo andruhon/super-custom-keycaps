@@ -3,6 +3,10 @@
 I'm trying to design keycaps which are good when printed on
 3D printer with AMS or similar material changing system.
 
+## 18 Mar 2025
+Updated to QMK 0.28.0. There are mouse keycode changes.
+Mouse codes are now prefixed with MS_, rather than with KC_.
+
 ## 17 Mar 2025
 It is slowly getting shape!
 
