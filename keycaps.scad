@@ -15,11 +15,6 @@ LAYER_LINE_WIDTH = 0.22;
 PRINT_DEPTH = LAYER_HEIGHT * 2; // Best when it is double layer height
 SURFACE_DIFF_DEPTH = KEYCAP_HEIGHT - KEYCAP_SURFACE_LOWEST_POINT + PRINT_DEPTH;
 
-// Either place keys in a precise layout you configured them,
-// or just in a number of rows one by one
-AUTO_LAYOUT = false;
-AUTO_LAYOUT_KEYS_PER_ROW = 8;
-
 SURFACE_PRINT_ANGLE = 0; // In the case surface is at angle
 
 /**
@@ -52,14 +47,19 @@ SIDE_PRINT_POSITION_Z = 6;
 SIDE_PRINT_RELATIVE_Y = -6.67;
 SIDE_PRINT_COLOUR = "purple";
 
+// Default keycap body to be TO_RENDERed if alternative not provided
+defaultBody = "bodies/cylindric-concave.3mf";
+
 /**
  * TO_RENDER print selected part
  * Options are: all, body, print, center, left, right, side
  */
 TO_RENDER = "all";
 
-// Default keycap body to be TO_RENDERed if alternative not provided
-defaultBody = "bodies/cylindric-concave.3mf";
+// Either place keys in a precise layout you configured them,
+// or just in a number of rows one by one
+AUTO_LAYOUT = false;
+AUTO_LAYOUT_KEYS_PER_ROW = 8;
 
 // Data to TO_RENDER keycaps
 keycaps = [
@@ -187,7 +187,7 @@ module printBody(definition, index) {
 }
 
 module printBase(definition, index) {
-    color(SURFACE_CENTER_PRINT_COLOUR) union() for (definition = keycaps) printSvg(
+    for (definition = keycaps) printSvg(
         getRow(definition, index), getLine(definition, index),
         svg = get(definition, "center_svg"),
         relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
