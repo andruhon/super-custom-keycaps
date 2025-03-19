@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1.8626629mm"
-   height="3.104238mm"
-   viewBox="0 0 1.8626631 3.1042381"
+   width="2.0489357mm"
+   height="3.337827mm"
+   viewBox="0 0 2.0489357 3.337827"
    version="1.1"
    id="svg1"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,24 +12,18 @@
   <defs
      id="defs1" />
   <g
-     id="layer1"
-     transform="translate(-77.356128,-96.043281)">
-    <g
-       id="text2"
-       style="font-weight:900;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.264583px;text-anchor:middle;stroke-width:1.71979"
-       aria-label="&lt;&#10;,"
-       transform="translate(0.13229202,0.54327604)">
-      <g
-         id="text4"
-         aria-label="&gt;&#10;."
-         transform="translate(-0.118119,0.591568)">
-        <path
-           d="m 77.341955,96.308962 1.128887,-0.430388 -1.128887,-0.430388 v -0.539749 l 1.862663,0.71261 v 0.515054 l -1.862663,0.71261 z"
-           id="path5" />
-        <path
-           d="m 78.253872,98.012675 q -0.137583,0 -0.236361,-0.10231 -0.09525,-0.0988 -0.09525,-0.23989 0,-0.141108 0.09525,-0.239886 0.09878,-0.102305 0.236361,-0.102305 0.137583,0 0.236361,0.102305 0.102305,0.09878 0.102305,0.239886 0,0.14111 -0.09878,0.23989 -0.09878,0.10231 -0.239888,0.10231 z"
-           id="path6" />
-      </g>
-    </g>
+     id="text1"
+     style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
+     aria-label="&lt;&#10;,"
+     transform="matrix(-1,0,0,1,-0.4567038,0.48664166)">
+    <path
+       d="m -2.5056394,0.29723145 2.0489356,-0.78387311 V 0.10708401 L -1.698483,0.58051232 -0.4567038,1.0539406 V 1.6476663 L -2.5056394,0.8637932 Z"
+       id="path2" />
   </g>
+  <circle
+     style="fill:#000000;stroke-width:0.264583"
+     id="path6"
+     cx="1.0480593"
+     cy="2.9259746"
+     r="0.41185245" />
 </svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.2820177mm"
+   height="2.8987784mm"
+   viewBox="0 0 4.2820177 2.8987784"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="KC_F11.svg"
+   inkscape:export-filename="KC_F2.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="4.2820177"
+       height="2.8987784"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <path
+     d="M 0,2.8987783 V 0.0582084 H 1.9014743 V 0.63641186 H 0.66357571 V 1.2573014 H 1.7734158 V 1.8316243 H 0.66357571 v 1.067154 z M 3.6223226,1.8626688 3.2109833,2.3244554 H 4.2820178 V 2.8987783 H 2.2563655 V 2.4680361 L 3.0868053,1.5328212 Q 3.292475,1.3077487 3.3739668,1.1758097 q 0.081492,-0.1319391 0.081492,-0.26387809 0,-0.13193904 -0.073731,-0.21731135 -0.073731,-0.0853723 -0.2056697,-0.0853723 -0.1435807,0 -0.2522364,0.10865568 Q 2.815166,0.82267875 2.7491965,1.0361095 L 2.2369627,0.73730642 Q 2.3456184,0.3764143 2.613377,0.1901475 2.8811357,0 3.2381472,0 q 0.291042,0 0.4967116,0.1202974 0.2095503,0.1164168 0.3143254,0.3182059 0.1047751,0.19790856 0.1047751,0.43850327 0,0.24447523 -0.1164168,0.45402553 -0.1125362,0.2056697 -0.4152199,0.5316367 z"
+     id="text2"
+     style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
+     aria-label="F2" />
+</svg>
