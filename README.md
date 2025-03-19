@@ -33,3 +33,4 @@ In Inkscape
 - Top layer and infill - Aligned rectilinear.
 - Infill direction 90
 - Top shell layers 16 to avoid sparse infill (sparce infill won't save anything on such small prints)
+- Seams at rear
