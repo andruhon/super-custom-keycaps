@@ -58,8 +58,8 @@ TO_RENDER = "all";
 
 // Either place keys in a precise layout you configured them,
 // or just in a number of rows one by one
-AUTO_LAYOUT = false;
-AUTO_LAYOUT_KEYS_PER_ROW = 8;
+AUTO_LAYOUT = true;
+AUTO_LAYOUT_KEYS_PER_ROW = 6;
 
 // Data to TO_RENDER keycaps
 keycaps = [
@@ -187,7 +187,7 @@ module printBody(definition, index) {
 }
 
 module printBase(definition, index) {
-    for (definition = keycaps) printSvg(
+    printSvg(
         getRow(definition, index), getLine(definition, index),
         svg = get(definition, "center_svg"),
         relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
