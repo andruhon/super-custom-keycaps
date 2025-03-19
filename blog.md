@@ -3,6 +3,9 @@
 I'm trying to design keycaps which are good when printed on
 3D printer with AMS or similar material changing system.
 
+## 20 Mar 2025
+Trying to set slower speed for top surface layer to improve quality.
+
 ## 17 Mar 2025
 It is slowly getting shape!
 

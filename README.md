@@ -22,3 +22,14 @@ In Inkscape
 - (CTRL+SHIFT+C) to convert letter to path
 - (CTRL+D) and then select resize to content
 - (CTRL+SHIFT+E) type file name matching short QMK code, select "Plain SVG" and click Export.
+
+## Printing
+
+- You need 0.2 mm nozzle to print these keycaps.
+- Layer height 0.1 mm
+- Exported 3mf file will have 4 subparts. Allocate desired colours to them.
+- No supports. Buttons are small enough bridging should work well.
+- No AUX fan. Stems will peel if it's on, generally buttons closer to the fan look worse.
+- Top layer and infill - Aligned rectilinear.
+- Infill direction 90
+- Top shell layers 16 to avoid sparse infill (sparce infill won't save anything on such small prints)
