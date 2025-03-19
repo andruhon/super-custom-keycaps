@@ -79,7 +79,7 @@ keycaps = [
     keycap(2, 5, center_svg = "KC_N",    left_svg = "KC_DEL",  right_svg = "MS_BTN1", side_svg = "KC_ENT"),
     keycap(2, 6, center_svg = "KC_M",    left_svg = "KC_TAB",  right_svg= "KC_1", side_svg = "KC_LGUI"),
     keycap(2, 7, center_svg = "KC_COMM", left_svg = "KC_INS",  right_svg= "KC_2", side_svg = "KC_LALT"),
-    keycap(2, 8, center_svg = "KC_DOT",  left_svg = "KC_APP",  right_svg= "KC_3", side_svg = "ctrl"),
+    keycap(2, 8, center_svg = "KC_DOT",  left_svg = "KC_APP",  right_svg= "KC_3", side_svg = "KC_LCTL"),
     keycap(2, 9, center_svg = "KC_SLSH", right_svg="MS_ACL0",  side_svg = "KC_LSFT"),
 
     keycap(3, 3, center_svg = "KC_SPC"),

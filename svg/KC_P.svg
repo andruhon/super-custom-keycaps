@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-   width="7.9200187"
-   height="10.736025"
-   viewBox="0 0 7.9200184 10.736025"
-   fill="none"
+   width="2.1963971mm"
+   height="2.84057mm"
+   viewBox="0 0 2.196397 2.84057"
    version="1.1"
-   id="svg3"
+   id="svg1"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
   <g
-     clip-path="url(#clip0_8_154)"
-     id="g2"
-     transform="translate(-2.7499294,-30.254319)">
+     id="layer1"
+     transform="translate(-66.885237,-158.11009)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="68.657768"
+       y="148.46114"
+       id="text1"><tspan
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114" /></text>
     <path
-       d="m 2.7499294,30.254319 h 3.6960085 q 1.2613362,0 2.2146717,0.440001 0.9680023,0.440001 1.4813364,1.24667 0.528002,0.806669 0.528002,1.862671 0,1.056002 -0.528002,1.862671 -0.5133341,0.792002 -1.4666697,1.232003 -0.9533355,0.425334 -2.2293384,0.425334 h -1.569337 v 3.666675 H 2.7499294 Z m 2.1266715,5.265346 h 1.3346698 q 1.0120023,0 1.5986703,-0.425334 0.6013347,-0.440001 0.6013347,-1.29067 0,-0.865335 -0.6013347,-1.305336 Q 7.2086063,32.058324 6.2112707,32.058324 H 4.8766009 Z"
-       id="text4"
-       style="font-weight:bold;font-size:14.6667px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;letter-spacing:0.3px;text-anchor:middle;fill:#000000"
+       d="m 66.885237,158.11009 h 1.028349 q 0.357011,0 0.620889,0.1203 0.263878,0.11642 0.403578,0.33373 0.143581,0.21731 0.143581,0.50835 0,0.29493 -0.143581,0.51224 -0.1397,0.21343 -0.403578,0.33373 -0.259997,0.11641 -0.620889,0.11641 h -0.364773 v 0.91581 h -0.663576 z m 0.663576,1.36596 h 0.291042 q 0.244475,0 0.391936,-0.0931 0.151342,-0.0931 0.151342,-0.31045 0,-0.21343 -0.151342,-0.30656 -0.151341,-0.097 -0.391936,-0.097 h -0.291042 z"
+       id="text2"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0.0608542px;text-anchor:middle;stroke-width:0.264583"
        aria-label="P" />
   </g>
-  <defs
-     id="defs3">
-    <clipPath
-       id="clip0_8_154">
-      <rect
-         width="115"
-         height="50"
-         fill="#ffffff"
-         id="rect3"
-         x="0"
-         y="0" />
-    </clipPath>
-  </defs>
 </svg>
