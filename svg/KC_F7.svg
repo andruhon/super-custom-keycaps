@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.1638379mm"
+   height="2.8444543mm"
+   viewBox="0 0 4.1638378 2.8444543"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-72.231382,-153.38128)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="68.657768"
+       y="148.46114"
+       id="text1"><tspan
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114" /></text>
+    <g
+       id="layer1-5"
+       transform="matrix(0,-0.95732515,0.95732515,0,-73.409346,225.19952)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114"
+         id="text1-3"><tspan
+           id="tspan1-5"
+           style="stroke-width:0.264583"
+           x="68.657768"
+           y="148.46114" /></text>
+      <g
+         id="text2"
+         style="font-weight:bold;font-size:3.88056px;line-height:0.9;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
+         aria-label="&#10;*&#10;8">
+        <path
+           d="m 152.13298,-72.048443 v -2.967199 h 1.98624 v 0.603979 h -1.29308 v 0.648568 h 1.15931 v 0.599925 h -1.15931 v 1.114727 z m 2.61048,0 0.96475,-2.367273 h -1.28093 v -0.603979 h 2.05515 v 0.43373 l -0.98906,2.537522 z"
+           id="text3"
+           style="font-weight:900;font-size:4.05355px;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';letter-spacing:0px;stroke-width:0.0731248"
+           transform="rotate(90)"
+           aria-label="F7" />
+      </g>
+    </g>
+  </g>
+</svg>

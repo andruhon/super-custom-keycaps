@@ -76,10 +76,13 @@ module keycap() {
                 rotate([0, 0, 45]) cylinder(height,d1=cone_bottom_diameter,d2=cone_top_diameter,$fn=4);
                 cylinder(0.01,d=corner_diameter,$fn=50);                
             };
-            translate([0, 0, 2.9*height]) rotate([90, 90, 0]) cylinder(bottom_side,r=2*height, $fn=300, center=true);
+            translate([0, 0, 2.9*height]) rotate([90, 90, 0]) cylinder(bottom_side,r=2*height, $fn=300, center=true);            
+            // Quick and dirty sharp edge removal
+            // translate([-0.6*top_side, -top_side, 0.825*height]) rotate([7, 0, 0]) cube(15);
         } 
     }
 }
+
 
 module check_cubes(all=false, bottom=false, top=false, wall=false) {
     // Dimensions check cubes

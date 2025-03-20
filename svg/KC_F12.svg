@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.232553mm"
+   height="2.8987899mm"
+   viewBox="0 0 6.2325531 2.89879"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-45.12674,-140.02558)">
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="44.30838"
+       y="132.97408"
+       id="text3"><tspan
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="44.30838"
+         y="132.97408"></tspan></text>
+    <path
+       d="m 45.12674,142.92437 v -2.84057 h 1.901474 v 0.57821 h -1.237898 v 0.62089 h 1.10984 v 0.57432 h -1.10984 v 1.06715 z m 3.050116,-2.1343 -0.737306,0.40745 v -0.62089 l 0.888648,-0.49671 h 0.519995 v 2.84445 h -0.671337 z m 2.522742,1.09819 -0.41134,0.46179 h 1.071035 v 0.57432 H 49.33364 v -0.43074 l 0.83044,-0.93521 c 0.137113,-0.15005 0.232834,-0.26906 0.287162,-0.35701 0.05433,-0.088 0.08149,-0.17592 0.08149,-0.26388 0,-0.088 -0.02458,-0.1604 -0.07373,-0.21731 -0.04915,-0.0569 -0.11771,-0.0854 -0.20567,-0.0854 -0.09572,0 -0.1798,0.0362 -0.252236,0.10866 -0.07244,0.0699 -0.130646,0.17591 -0.174625,0.3182 l -0.512234,-0.2988 c 0.07244,-0.24059 0.197908,-0.42298 0.376414,-0.54716 0.178506,-0.12676 0.386762,-0.19014 0.62477,-0.19014 0.194028,0 0.359598,0.0401 0.496712,0.12029 0.1397,0.0776 0.244475,0.18368 0.314325,0.31821 0.06985,0.13194 0.104775,0.27811 0.104775,0.4385 0,0.16299 -0.03881,0.31433 -0.116417,0.45403 -0.07502,0.13711 -0.213431,0.31432 -0.415219,0.53163 z"
+       id="text4"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       aria-label="F12" />
+  </g>
+</svg>
