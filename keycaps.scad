@@ -80,7 +80,7 @@ keycaps = [
     keycap(1, 3, center_svg = "KC_F",    left_svg = "KC_F6",    right_svg = "MS_RGHT",  side_svg = "KC_SPC"),
     keycap(1, 4, center_svg = "KC_G",    left_svg = "KC_F10",   right_svg = "MS_WHLD",  side_svg = "KC_GRV"),
     
-    keycap(1, 5, center_svg = "KC_H",    left_svg = "KC_PGDN",  right_svg = "KC_EQL",   side_svg = "KC_EQL-s"),
+    keycap(1, 5, center_svg = "KC_H",    left_svg = "KC_PGDN",  right_svg = "KC_EQL",   side_svg = "KC_EQL_s"),
     keycap(1, 6, center_svg = "KC_J",    left_svg = "KC_LEFT",  right_svg = "KC_4",     side_svg = "KC_RABK"),
     keycap(1, 7, center_svg = "KC_K",    left_svg = "KC_DOWN",  right_svg = "KC_5",     side_svg = "KC_LCBR"),
     keycap(1, 8, center_svg = "KC_L",    left_svg = "KC_RGHT",  right_svg = "KC_6",     side_svg = "KC_RCBR"),
@@ -98,13 +98,13 @@ keycaps = [
     keycap(2, 8, center_svg = "KC_DOT",  left_svg = "KC_APP",   right_svg = "KC_3",     side_svg = "KC_LCTL"),
     keycap(2, 9, center_svg = "KC_SLSH",                        right_svg = "MS_ACL0",  side_svg = "KC_LSFT"),
 
+    keycap(3, 4, body="bodies/cylindric-concave-thumb.3mf", left_svg = "TL_LOWR", side_svg = "ADJUST_v", side_position_z=3.3, side_relative_y=-7.4, left_relative_y=0),
+    keycap(3, 5, body="bodies/cylindric-concave-thumb.3mf", right_svg  = "TL_UPPR", side_svg = "ADJUST_v", side_position_z=3.3, side_relative_y=-7.4, right_relative_y=0),
     keycap(3, 3, body="bodies/cylindric-concave-thumb.3mf", center_svg = "KC_SPC"),
-    keycap(3, 4, body="bodies/cylindric-concave-thumb.3mf", left_svg = "TL_LOWR", side_svg = "ADJUST", left_relative_y=0),
-    keycap(3, 5, body="bodies/cylindric-concave-thumb.3mf", right_svg  = "TL_UPPR", side_svg = "ADJUST", right_relative_y=0),
     keycap(3, 6, body="bodies/cylindric-concave-thumb.3mf", center_svg = "KC_ENT_i"),
 
-    // keycap(4, 4, body="bodies/cylindric-concave-thumb.3mf", left_svg = "TL_LOWR", side_svg = "ADJUST_v", side_position_z=3.3, side_relative_y=-7.4, left_relative_y=0),
-    // keycap(4, 5, body="bodies/cylindric-concave-thumb.3mf", right_svg  = "TL_UPPR", side_svg = "ADJUST_v", side_position_z=3.3, side_relative_y=-7.4, right_relative_y=0),
+    // keycap(3, 4, body="bodies/cylindric-concave-thumb.3mf", left_svg = "TL_LOWR", side_svg = "ADJUST", left_relative_y=0),
+    // keycap(3, 5, body="bodies/cylindric-concave-thumb.3mf", right_svg  = "TL_UPPR", side_svg = "ADJUST", right_relative_y=0),
 ];
 
 // Prepares keycap definition
