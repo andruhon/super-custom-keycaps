@@ -23,6 +23,8 @@ In Inkscape
 - (CTRL+D) and then select resize to content
 - (CTRL+SHIFT+E) type file name matching short QMK code, select "Plain SVG" and click Export.
 
+Once new svg is added to `/svg` directory the `node measure-svg.js` has to be executed.
+
 ## Printing
 
 - You need 0.2 mm nozzle to print these keycaps.

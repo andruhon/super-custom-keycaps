@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.3671474mm"
+   height="2.8405709mm"
+   viewBox="0 0 2.3671474 2.840571"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="matrix(0.72072646,0,0,0.72072646,-51.307947,-111.76668)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="68.657768"
+       y="148.46114"
+       id="text1"><tspan
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114" /></text>
+    <g
+       id="layer1-5"
+       transform="matrix(0,-0.95732515,0.95732515,0,-73.409346,225.19952)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114"
+         id="text1-3"><tspan
+           id="tspan1-5"
+           style="stroke-width:0.264583"
+           x="68.657768"
+           y="148.46114" /></text>
+      <path
+         d="m 151.04435,-72.401179 v -0.849262 h 3.4308 v 0.849262 h -1.23734 v 3.267689 h -0.95612 v -3.267689 z"
+         id="text2"
+         style="font-weight:900;font-size:5.62425px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.383471"
+         transform="rotate(90)"
+         aria-label="T" />
+    </g>
+  </g>
+</svg>

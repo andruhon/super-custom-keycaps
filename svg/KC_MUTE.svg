@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.1186776mm"
+   height="3.6000001mm"
+   viewBox="0 0 2.1186776 3.6000002"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="matrix(0.72072646,0,0,0.72072646,-54.436499,-114.29133)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="68.657768"
+       y="148.46114"
+       id="text1"><tspan
+         id="tspan1"
+         style="stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114" /></text>
+    <g
+       id="layer1-5"
+       transform="matrix(0,-0.95732515,0.95732515,0,-73.409346,225.19952)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0.079375px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+         x="68.657768"
+         y="148.46114"
+         id="text1-3"><tspan
+           id="tspan1-5"
+           style="stroke-width:0.264583"
+           x="68.657768"
+           y="148.46114" /></text>
+      <g
+         id="text2"
+         style="font-weight:bold;font-size:3.88056px;line-height:0.9;font-family:'Liberation Serif';-inkscape-font-specification:'Liberation Serif Bold';text-align:center;letter-spacing:0.079375px;text-anchor:middle;stroke-width:0.264583"
+         aria-label="&#10;*&#10;8"
+         transform="matrix(0.9,0,0,0.9,6.6982554,15.788173)">
+        <path
+           d="m 68.119861,155.41779 c 0,-0.0525 -0.04253,-0.095 -0.09499,-0.095 h -2.084626 c -0.05248,0 -0.09499,0.0425 -0.09499,0.095 v 1.38206 c 0,0.0253 -0.01,0.0494 -0.02783,0.0671 l -1.70553,1.70553 c -0.05985,0.0599 -0.01746,0.16218 0.06718,0.16218 h 5.60698 c 0.08462,0 0.127011,-0.10233 0.06717,-0.16218 l -1.705521,-1.70553 c -0.01782,-0.0178 -0.02783,-0.042 -0.02783,-0.0671 z"
+           fill="#000000"
+           id="path1"
+           style="stroke-width:0.0502667" />
+      </g>
+    </g>
+  </g>
+</svg>

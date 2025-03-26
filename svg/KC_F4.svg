@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.3462243mm"
+   height="2.84445mm"
+   viewBox="0 0 4.3462241 2.8444501"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-40.345328,-132.78029)">
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="44.30838"
+       y="132.97408"
+       id="text3"><tspan
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="44.30838"
+         y="132.97408" /></text>
+    <path
+       d="m 40.345328,135.62474 v -2.84057 h 1.901475 v 0.5782 h -1.237899 v 0.62089 h 1.10984 v 0.57432 h -1.10984 v 1.06716 z m 3.321756,-1.72297 h 0.644173 v 0.60149 h 0.380295 v 0.56656 h -0.380295 v 0.55492 h -0.644173 v -0.55492 h -1.199093 v -0.45403 l 0.939096,-1.8355 h 0.686859 l -0.888649,1.72297 h 0.461787 z"
+       id="text1"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+       aria-label="F4" />
+  </g>
+</svg>

@@ -65,7 +65,9 @@ AUTO_LAYOUT_KEYS_PER_ROW = 5;
 keycaps = [
     keycap(0, 0, center_svg = "KC_Q",    left_svg = "KC_ESC",   right_svg = "KC_ESC",   side_svg = "KC_ESC"),
     keycap(0, 1, center_svg = "KC_W",    left_svg = "KC_F7",    right_svg = "MS_BTN2",  side_svg = "KC_VOLD"),
+    keycap(0, 2, center_svg = "KC_E",    left_svg = "KC_F8",    right_svg = "MS_UP",    side_svg = "KC_MUTE"),
     keycap(0, 3, center_svg = "KC_R",    left_svg = "KC_F9",    right_svg = "MS_BTN1",  side_svg = "KC_VOLU"),
+    keycap(0, 4, center_svg = "KC_T",    left_svg = "KC_F12",   right_svg = "MS_WHLU",  side_svg = "KC_PAUSE"),
     keycap(0, 5, center_svg = "KC_Y",    left_svg = "KC_PGUP",  right_svg = "KC_MINS",  side_svg = "KC_PSCR"),
     keycap(0, 6, center_svg = "KC_U",    left_svg = "KC_HOME",  right_svg = "KC_7",     side_svg = "KC_CAPS"),
     keycap(0, 7, center_svg = "KC_I",    left_svg = "KC_UP",    right_svg = "KC_8",     side_svg = "KC_LBRC"),
@@ -73,6 +75,12 @@ keycaps = [
     keycap(0, 9, center_svg = "KC_P",    left_svg = "KC_BSPC_s",right_svg = "KC_BSPC_s",side_svg = "KC_BSPC_s"),
 
     keycap(1, 0, center_svg = "KC_A",    left_svg = "KC_GRV",   right_svg = "KC_QUOT",  side_svg = "KC_TAB_i"),
+    keycap(1, 1, center_svg = "KC_S",    left_svg = "KC_F4",    right_svg = "MS_LEFT",  side_svg = "KC_LPRN"),
+    keycap(1, 2, center_svg = "KC_D",    left_svg = "KC_F5",    right_svg = "MS_DOWN",  side_svg = "KC_RPRN"),
+    keycap(1, 3, center_svg = "KC_F",    left_svg = "KC_F6",    right_svg = "MS_RGHT",  side_svg = "KC_SPC"),
+    keycap(1, 4, center_svg = "KC_G",    left_svg = "KC_F10",   right_svg = "MS_WHLD",  side_svg = "KC_GRV"),
+    
+    keycap(1, 5, center_svg = "KC_H",    left_svg = "KC_PGDN",  right_svg = "KC_EQL",   side_svg = "KC_EQL-s"),
 
     keycap(2, 0, center_svg = "KC_Z",    left_svg = "KC_LSFT",  right_svg = "MS_BTN3",  side_svg = "KC_LSFT"),
     keycap(2, 1, center_svg = "KC_X",    left_svg = "KC_F1",    right_svg = "KC_BSLS",  side_svg = "KC_LCTL"),

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.7194586mm"
+   height="2.7891841mm"
+   viewBox="0 0 4.7194586 2.7891842"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-46.807065,-133.85597)">
+    <path
+       d="m 46.919081,133.85655 c -0.07706,0.003 -0.137219,0.0767 -0.101412,0.14829 l 1.289095,2.57758 c 0.04538,0.0908 0.194034,0.0805 0.222969,-0.0154 l 0.30541,-1.01247 c 0.01097,-0.0363 0.04315,-0.065 0.08408,-0.0746 l 1.140136,-0.27121 c 0.107997,-0.0257 0.119512,-0.1577 0.01733,-0.19801 l -2.90257,-1.14476 c -0.01861,-0.008 -0.03726,-0.01 -0.05503,-0.01 z"
+       style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#000000;stroke-width:0.113003;enable-background:accumulate;stop-color:#000000"
+       id="path12" />
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+       x="44.30838"
+       y="132.97408"
+       id="text3"><tspan
+         id="tspan3"
+         style="stroke-width:0.264583"
+         x="44.30838"
+         y="132.97408" /></text>
+    <path
+       d="m 50.747267,134.74879 -0.399933,0.39994 c -0.02296,0.023 -0.05751,0.0298 -0.08751,0.0174 -0.03001,-0.0124 -0.04957,-0.0417 -0.04957,-0.0742 v -1.15566 c 0,-0.0444 0.03595,-0.0803 0.0803,-0.0803 h 1.155665 c 0.03248,0 0.06176,0.0196 0.07418,0.0496 0.01243,0.03 0.0056,0.0645 -0.0174,0.0875 l -0.410643,0.41065 c 0.190342,0.24265 0.305753,0.54714 0.305753,0.88086 0,0.63303 -0.412523,1.16747 -0.982113,1.35643 -0.02024,0.007 -0.04233,0.005 -0.06139,-0.005 -0.01905,-0.01 -0.0335,-0.0264 -0.04017,-0.0466 l -0.100154,-0.30433 c -0.01387,-0.0421 0.009,-0.0875 0.05117,-0.10137 0.377714,-0.12432 0.651051,-0.48081 0.651051,-0.89963 0,-0.19975 -0.06325,-0.38309 -0.169232,-0.53577 z"
+       style="clip-rule:evenodd;fill:#000000;fill-rule:evenodd;stroke-width:0.0802963"
+       id="path1" />
+  </g>
+</svg>
