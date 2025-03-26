@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1.0136294mm"
+   height="6.3617067mm"
+   viewBox="0 0 1.0136294 6.3617062"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="text7"
+     style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
+     aria-label=":&#10;;"
+     transform="translate(0.62169176,-0.55675811)">
+    <path
+       d="m -0.0881224,5.3387372 c 0.11382975,0 0.27956439,0.08536 0.35976263,0.1759066 0.0801982,0.090546 0.12029736,0.2797526 0.12029736,0.4530843 0,0.1578095 -0.0362186,0.3052707 -0.10865568,0.4423838 -0.0698501,0.1371131 -0.16686408,0.2496494 -0.29104199,0.3376088 -0.12159088,0.090546 -0.25611696,0.1474613 -0.40357824,0.1707446 l -0.0687206,-0.301214 c 0.12159088,-0.025871 0.21860488,-0.072437 0.291042,-0.1397002 0.0724371,-0.067263 0.1164168,-0.1539288 0.13193904,-0.2599975 h -0.0077611 -0.0077611 c -0.10089456,0 -0.30209479,-0.066146 -0.37453191,-0.1411698 -0.0698501,-0.072437 -0.10477512,-0.1603965 -0.10477512,-0.2638781 0,-0.1060686 0.032338,-0.2525887 0.097014,-0.3250258 0.067263,-0.072437 0.26587623,-0.1487427 0.36677071,-0.1487427 z"
+       id="path9" />
+    <circle
+       style="fill:#000000;stroke-width:0.0700042"
+       id="path10"
+       cx="-0.1148771"
+       cy="1.0635728"
+       r="0.50681466" />
+    <circle
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0.0700042"
+       id="path10-5"
+       cx="-0.1148771"
+       cy="2.4688971"
+       r="0.50681466" />
+    <circle
+       style="font-weight:900;font-size:3.88056px;line-height:0.9;font-family:'HarmonyOS Sans';-inkscape-font-specification:'HarmonyOS Sans Heavy';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke-width:0.0700042"
+       id="path10-5-2"
+       cx="-0.1148771"
+       cy="4.4996929"
+       r="0.50681466" />
+  </g>
+</svg>
