@@ -3,6 +3,9 @@
 I'm trying to design keycaps which are good when printed on
 3D printer with AMS or similar material changing system.
 
+## 26 Mar 2025
+All SVGs are finally ready! Sent remaining keys to print.
+
 ## 20 Mar 2025
 Trying to set slower speed for top surface layer to improve quality.
 
