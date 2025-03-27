@@ -47,11 +47,15 @@ SIDE_PRINT_POSITION_Z = 6;
 SIDE_PRINT_RELATIVE_Y = -6.67;
 SIDE_PRINT_COLOUR = "purple";
 
-// Default keycap body to be TO_RENDERed if alternative not provided
+HOME_ROW_PIMPLE_DIAMETER = 1.2;
+HOME_ROW_PIMPLE_RELATIVE_Y = -(KEYCAP_WIDTH/2 - 4);
+HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 4.6;
+
+// Default keycap body to be rendered if alternative not provided
 DEFAULT_BODY = "bodies/cylindric-concave.3mf";
 
 /**
- * TO_RENDER print selected part
+ * To render selected part
  * Options are: all, body, print, center, left, right, side
  */
 TO_RENDER = "all";
@@ -61,7 +65,7 @@ TO_RENDER = "all";
 AUTO_LAYOUT = false;
 AUTO_LAYOUT_KEYS_PER_ROW = 5;
 
-// Data to TO_RENDER keycaps
+// Data to to render keycaps
 keycaps = [
     keycap(0, 0, center_svg = "KC_Q",    left_svg = "KC_ESC",   right_svg = "KC_ESC",   side_svg = "KC_ESC"),
     keycap(0, 1, center_svg = "KC_W",    left_svg = "KC_F7",    right_svg = "MS_BTN2",  side_svg = "KC_VOLD"),
@@ -77,11 +81,11 @@ keycaps = [
     keycap(1, 0, center_svg = "KC_A",    left_svg = "KC_GRV",   right_svg = "KC_QUOT",  side_svg = "KC_TAB_i"),
     keycap(1, 1, center_svg = "KC_S",    left_svg = "KC_F4",    right_svg = "MS_LEFT",  side_svg = "KC_LPRN"),
     keycap(1, 2, center_svg = "KC_D",    left_svg = "KC_F5",    right_svg = "MS_DOWN",  side_svg = "KC_RPRN"),
-    keycap(1, 3, center_svg = "KC_F",    left_svg = "KC_F6",    right_svg = "MS_RGHT",  side_svg = "KC_SPC"),
+    keycap(1, 3, center_svg = "KC_F",    left_svg = "KC_F6",    right_svg = "MS_RGHT",  side_svg = "KC_SPC", home_row = true),
     keycap(1, 4, center_svg = "KC_G",    left_svg = "KC_F10",   right_svg = "MS_WHLD",  side_svg = "KC_GRV"),
     
     keycap(1, 5, center_svg = "KC_H",    left_svg = "KC_PGDN",  right_svg = "KC_EQL",   side_svg = "KC_EQL_s"),
-    keycap(1, 6, center_svg = "KC_J",    left_svg = "KC_LEFT",  right_svg = "KC_4",     side_svg = "KC_RABK"),
+    keycap(1, 6, center_svg = "KC_J",    left_svg = "KC_LEFT",  right_svg = "KC_4",     side_svg = "KC_RABK", home_row = true),
     keycap(1, 7, center_svg = "KC_K",    left_svg = "KC_DOWN",  right_svg = "KC_5",     side_svg = "KC_LCBR"),
     keycap(1, 8, center_svg = "KC_L",    left_svg = "KC_RGHT",  right_svg = "KC_6",     side_svg = "KC_RCBR"),
     keycap(1, 9, center_svg = "KC_SCLN", left_svg = "KC_QUOT",  right_svg = "KC_0",     side_svg = "KC_MINS"),
@@ -119,7 +123,8 @@ function keycap(
     side_position_z=SIDE_PRINT_POSITION_Z,
     side_angle=SIDE_PRINT_ANGLE,
     left_relative_y="",
-    right_relative_y=""
+    right_relative_y="",
+    home_row=false
 ) = [    
     ["line", line],
     ["row", row],
@@ -132,7 +137,8 @@ function keycap(
     ["side_position_z", side_position_z],
     ["side_angle", side_angle],
     ["left_relative_y", left_relative_y == "" ? -getRelativeSvgPositionY(left_svg) : left_relative_y],
-    ["right_relative_y", right_relative_y == "" ? getRelativeSvgPositionY(right_svg) : right_relative_y]
+    ["right_relative_y", right_relative_y == "" ? getRelativeSvgPositionY(right_svg) : right_relative_y],
+    ["home_row", home_row]
 ];
 
 if (TO_RENDER == "all" || TO_RENDER == "body") {
@@ -169,11 +175,17 @@ module printBody(definition, index) {
     left_relative_y = get(definition, "left_relative_y");
     right_relative_y = get(definition, "right_relative_y");
     side_angle = get(definition, "side_angle");
+    home_row = get(definition, "home_row");
     difference() {
         translate([row * (KEYCAP_WIDTH + SPACING), -line * (KEYCAP_WIDTH + SPACING), KEYCAP_HEIGHT/2]) {
             // There's some issue with 2025.03.16 imported files are floating a few mm above XY plane
-            import(body, center=true, convexity=KEYCAP_CONVEXITY);
-        }
+            union() {
+                import(body, center=true, convexity=KEYCAP_CONVEXITY);
+                if (home_row) {
+                    translate([0, HOME_ROW_PIMPLE_RELATIVE_Y, HOME_ROW_PIMPLE_RELATIVE_Z]) sphere(d = HOME_ROW_PIMPLE_DIAMETER, $fn=15);
+                }
+            }
+        }            
         printSvg(
             row, line,
             svg = center_svg,
