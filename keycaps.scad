@@ -56,6 +56,7 @@ HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 4.6;
  * because 0.1mm of filament is nearly tranclucent it makes colours mix,
  * the mixture of red and blue looks nearly black.
  * This allows to have fifth colour with single AMS unit.
+ * I think this is only going to be helpful if body is white.
  */
 MIXED_COLOUR_CENTER = true;
 

@@ -1,5 +1,7 @@
 # Super Custom Keycaps
 
+**You need 0.2 mm nozzle to print these keycaps.**
+
 Customizable keycaps with side prints for QMK Tri Layouts opmimized for 3D printing
 
 These keykaps were initially a part of my layout for [TypeS Tri Layout](https://github.com/andruhon/type-s-tri-layout), but it seems like they deserve a separate repo.
@@ -26,6 +28,16 @@ In Inkscape
 Once new svg is added to `/svg` directory the `node measure-svg.js` has to be executed.
 
 ## Printing
+
+When loading 3mf or stl file the slicer is likely to ask you
+`The object from file keycaps.3mf is too small, and may be in meters or inches. Do you want to scale to millimeters?`
+Answer **No**. The file is already in milimeters. It's just keycaps relatevly small.
+
+The next question is 
+`This file contains several objects positioned at multiple heights. Instead of considering them as multiple objects, should the file be loaded as a single object having multiple parts?`
+Answer **Yes**. We don't want letters to end up separately from keycaps.
+
+Go to `Objects`. The object should have five parts. Allocate colours to parts to your liking.
 
 - You need 0.2 mm nozzle to print these keycaps.
 - Layer height 0.1 mm
