@@ -51,6 +51,14 @@ HOME_ROW_PIMPLE_DIAMETER = 1.2;
 HOME_ROW_PIMPLE_RELATIVE_Y = -(KEYCAP_WIDTH/2 - 4);
 HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 4.6;
 
+/**
+ * Place one layer of center into right and one layer of center into left,
+ * because 0.1mm of filament is nearly tranclucent it makes colours mix,
+ * the mixture of red and blue looks nearly black.
+ * This allows to have fifth colour with single AMS unit.
+ */
+MIXED_COLOUR_CENTER = true;
+
 // Default keycap body to be rendered if alternative not provided
 DEFAULT_BODY = "bodies/cylindric-concave.3mf";
 
@@ -224,35 +232,61 @@ module printBody(definition, index) {
 }
 
 module printBase(definition, index) {
-    printSvg(
-        getRow(definition, index), getLine(definition, index),
-        svg = get(definition, "center_svg"),
-        relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
-        position_z = SURFACE_CENTER_PRINT_POSITION_Z,
-        angle = SURFACE_PRINT_ANGLE
-    );
+    if (!MIXED_COLOUR_CENTER) {
+        printSvg(
+            getRow(definition, index), getLine(definition, index),
+            svg = get(definition, "center_svg"),
+            relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
+            position_z = SURFACE_CENTER_PRINT_POSITION_Z,
+            angle = SURFACE_PRINT_ANGLE
+        );
+    }
 }
 
 module printLower(definition, index) {
-    printSvg(
-        getRow(definition, index), getLine(definition, index),
-        svg = get(definition, "left_svg"),
-        relative_x = -getRelativeSvgPositionX(get(definition, "left_svg")),
-        relative_y = get(definition, "left_relative_y"),       
-        position_z = SURFACE_LEFT_PRINT_POSITION_Z,
-        angle = SURFACE_PRINT_ANGLE
-    );
+    union() {
+        printSvg(
+            getRow(definition, index), getLine(definition, index),
+            svg = get(definition, "left_svg"),
+            relative_x = -getRelativeSvgPositionX(get(definition, "left_svg")),
+            relative_y = get(definition, "left_relative_y"),       
+            position_z = SURFACE_LEFT_PRINT_POSITION_Z,
+            angle = SURFACE_PRINT_ANGLE
+        );
+        if (MIXED_COLOUR_CENTER) {
+            printSvg(
+                getRow(definition, index), getLine(definition, index),
+                svg = get(definition, "center_svg"),
+                relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
+                position_z = SURFACE_CENTER_PRINT_POSITION_Z + LAYER_HEIGHT,
+                angle = SURFACE_PRINT_ANGLE,
+                depth = LAYER_HEIGHT
+            );
+        }
+    }
 }
 
 module printRaise(definition, index) {
-    printSvg(
-        getRow(definition, index), getLine(definition, index),
-        svg = get(definition, "right_svg"),
-        relative_x = getRelativeSvgPositionX(get(definition, "right_svg")),
-        relative_y = get(definition, "right_relative_y"),       
-        position_z = SURFACE_LEFT_PRINT_POSITION_Z,
-        angle = SURFACE_PRINT_ANGLE
-    );
+    union() {
+        printSvg(
+            getRow(definition, index), getLine(definition, index),
+            svg = get(definition, "right_svg"),
+            relative_x = getRelativeSvgPositionX(get(definition, "right_svg")),
+            relative_y = get(definition, "right_relative_y"),       
+            position_z = SURFACE_LEFT_PRINT_POSITION_Z,
+            angle = SURFACE_PRINT_ANGLE
+        );
+        if (MIXED_COLOUR_CENTER) {
+            printSvg(
+                getRow(definition, index), getLine(definition, index),
+                svg = get(definition, "center_svg"),
+                relative_y = SURFACE_CENTER_PRINT_RELATIVE_Y,
+                position_z = SURFACE_CENTER_PRINT_POSITION_Z,
+                angle = SURFACE_PRINT_ANGLE,
+                depth = LAYER_HEIGHT
+            );
+        }
+    }
 }
 
 module printAdjust(definition, index) {
