@@ -191,7 +191,10 @@ module printBody(definition, index) {
             union() {
                 import(body, center=true, convexity=KEYCAP_CONVEXITY);
                 if (home_row) {
-                    translate([0, HOME_ROW_PIMPLE_RELATIVE_Y, HOME_ROW_PIMPLE_RELATIVE_Z]) sphere(d = HOME_ROW_PIMPLE_DIAMETER, $fn=15);
+                    translate([0, HOME_ROW_PIMPLE_RELATIVE_Y, HOME_ROW_PIMPLE_RELATIVE_Z]) difference() {
+                        sphere(d = HOME_ROW_PIMPLE_DIAMETER, $fn=15);
+                        translate([0, 0, -HOME_ROW_PIMPLE_DIAMETER/2]) cube([HOME_ROW_PIMPLE_DIAMETER,HOME_ROW_PIMPLE_DIAMETER,HOME_ROW_PIMPLE_DIAMETER], center=true);
+                    }
                 }
             }
         }            
