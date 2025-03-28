@@ -47,9 +47,9 @@ SIDE_PRINT_POSITION_Z = 6;
 SIDE_PRINT_RELATIVE_Y = -6.67;
 SIDE_PRINT_COLOUR = "purple";
 
-HOME_ROW_PIMPLE_DIAMETER = 1.2;
+HOME_ROW_PIMPLE_DIAMETER = 3;
 HOME_ROW_PIMPLE_RELATIVE_Y = -(KEYCAP_WIDTH/2 - 4);
-HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 4.6;
+HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 5.6;
 
 /**
  * Place one layer of center into right and one layer of center into left,
@@ -58,7 +58,7 @@ HOME_ROW_PIMPLE_RELATIVE_Z = KEYCAP_SURFACE_LOWEST_POINT - 4.6;
  * This allows to have fifth colour with single AMS unit.
  * I think this is only going to be helpful if body is white.
  */
-MIXED_COLOUR_CENTER = true;
+MIXED_COLOUR_CENTER = false;
 
 // Default keycap body to be rendered if alternative not provided
 DEFAULT_BODY = "bodies/cylindric-concave.3mf";
