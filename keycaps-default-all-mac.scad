@@ -116,7 +116,7 @@ keycaps = [
     keycap(0, 1, center_svg = "KC_W",    left_svg = "KC_F7",    right_svg = "MS_BTN2",  side_svg = "KC_VOLD"),
     keycap(0, 2, center_svg = "KC_E",    left_svg = "KC_F8",    right_svg = "MS_UP",    side_svg = "KC_MUTE"),
     keycap(0, 3, center_svg = "KC_R",    left_svg = "KC_F9",    right_svg = "MS_BTN1",  side_svg = "KC_VOLU"),
-    keycap(0, 4, center_svg = "KC_T",    left_svg = "KC_F12",   right_svg = "MS_WHLU",  side_svg = "KC_PAUSE"),
+    keycap(0, 4, center_svg = "KC_T",    left_svg = "KC_F12",   right_svg = "MS_WHLU"                       ),
     
     keycap(1, 0, center_svg = "KC_A",    left_svg = "KC_GRV",   right_svg = "KC_QUOT",  side_svg = "KC_TAB_i"),
     keycap(1, 1, center_svg = "KC_S",    left_svg = "KC_F4",    right_svg = "MS_LEFT",  side_svg = "KC_LPRN"),
@@ -134,7 +134,7 @@ keycaps = [
     VERBOSE_LABELS ? LOWR_VERBOSE : LOWR,
 
     // Rigth
-    keycap(0, 5, center_svg = "KC_Y",    left_svg = "KC_PGUP",  right_svg = "KC_MINS",  side_svg = "KC_PSCR"),
+    keycap(0, 5, center_svg = "KC_Y",    left_svg = "KC_PGUP",  right_svg = "KC_MINS"                       ),
     keycap(0, 6, center_svg = "KC_U",    left_svg = "KC_HOME",  right_svg = "KC_7",     side_svg = "KC_CAPS"),
     keycap(0, 7, center_svg = "KC_I",    left_svg = "KC_UP",    right_svg = "KC_8",     side_svg = "KC_LBRC"),
     keycap(0, 8, center_svg = "KC_O",    left_svg = "KC_END",   right_svg = "KC_9",     side_svg = "KC_RBRC"),
