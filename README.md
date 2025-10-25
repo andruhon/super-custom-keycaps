@@ -25,6 +25,7 @@ A number of other configurations is available:
 | File                                                                      | Description |
 | ---                                                                       | --- |
 |[keycaps-default-all.scad](keycaps-default-all.scad)                       | Standard keycaps in one print |
+|[keycaps-default-all-mac.scad](keycaps-default-all-mac.scad)               | Mac keycaps in one print |
 |[keycaps-default-left.scad](keycaps-default-left.scad)                     | Standard keycaps left side |
 |[keycaps-default-right.scad](keycaps-default-right.scad)                   | Standard keycaps right side |
 |[keycaps-default-mix-hack.scad](keycaps-default-mix-hack.scad)             | Allows to print five colours without swapping a roll. See [Mixed colour hack](#mixed-colour-hack)|
@@ -39,7 +40,7 @@ In Inkscape
 
 - (T) and type letter
 - (CTRL+SHIFT+C) to convert letter to path
-- (CTRL+D) and then select resize to content
+- (CTRL+SHIFT+D) and then select resize to content
 - (CTRL+SHIFT+E) type file name matching short QMK code, select "Plain SVG" and click Export.
 
 Once new svg is added to `/svg` directory the `node measure-svg.js` has to be executed.
